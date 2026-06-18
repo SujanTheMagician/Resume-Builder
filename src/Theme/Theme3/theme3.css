@@ -1,0 +1,152 @@
+/* ── THEME 3: Elegant Row Layout (Serif-inspired) ── */
+
+#section-to-print .t3-resume,
+.t3-resume {
+  width: 794px;
+  min-height: 1123px;
+  background: #fafaf8 !important;
+  color: #1a1a1a !important;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  padding: 52px 60px;
+  box-sizing: border-box;
+}
+
+.t3-resume * {
+  color: inherit !important;
+  background: transparent !important;
+  box-sizing: border-box;
+}
+
+.t3-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 14px;
+}
+
+.t3-header-left {}
+
+.t3-name {
+  font-size: 34px !important;
+  font-weight: 700 !important;
+  color: #7c2d12 !important;
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: -0.5px;
+  margin: 0 0 4px 0;
+}
+
+.t3-role {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555 !important;
+  margin: 0;
+  font-family: Georgia, serif;
+}
+
+.t3-header-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.t3-header-right span {
+  font-size: 11px;
+  color: #666 !important;
+  line-height: 1.5;
+}
+
+.t3-divider {
+  width: 100%;
+  height: 1px;
+  background: #ccc !important;
+  margin: 12px 0;
+}
+
+/* Row layout */
+.t3-row {
+  display: flex;
+  gap: 0;
+  padding: 12px 0;
+}
+
+.t3-row-label {
+  min-width: 160px;
+  width: 160px;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;
+  font-family: Georgia, serif;
+  padding-right: 20px;
+  padding-top: 1px;
+}
+
+.t3-row-content {
+  flex: 1;
+  border-left: 2px solid #e5e7eb;
+  padding-left: 20px;
+}
+
+.t3-text {
+  font-size: 12px;
+  color: #444 !important;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.t3-item {
+  margin-bottom: 10px;
+}
+
+.t3-item-title {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;
+  margin: 0 0 4px 0;
+  font-family: Georgia, serif;
+}
+
+.t3-item-details {
+  padding-left: 0;
+}
+
+.t3-item-details p {
+  font-size: 12px;
+  color: #555 !important;
+  margin: 1px 0;
+  line-height: 1.5;
+}
+
+.t3-item-list {
+  padding-left: 16px;
+  margin: 0;
+}
+
+.t3-item-list li {
+  font-size: 12px;
+  color: #444 !important;
+  margin-bottom: 2px;
+}
+
+.t3-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 16px;
+}
+
+.t3-skill-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: #333 !important;
+}
+
+.t3-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #7c2d12 !important;
+  flex-shrink: 0;
+}

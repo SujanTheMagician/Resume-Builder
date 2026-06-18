@@ -1,0 +1,116 @@
+.builder__loading {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 15, 0.85);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.builder__layout {
+  display: flex;
+  gap: 0;
+  min-height: calc(100vh - 70px);
+  margin-top: 70px;
+}
+
+@media (max-width: 1000px) {
+  .builder__layout { flex-direction: column; }
+}
+
+.builder__sidebar {
+  width: 440px;
+  flex-shrink: 0;
+  border-right: 1px solid rgba(108, 99, 255, 0.1);
+  background: #0d0d14;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+@media (max-width: 1000px) {
+  .builder__sidebar { width: 100%; position: static; height: auto; border-right: none; border-bottom: 1px solid rgba(108,99,255,0.1); }
+}
+
+.builder__preview-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #0a0a0f;
+  overflow: hidden;
+}
+
+.builder__preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  border-bottom: 1px solid rgba(108, 99, 255, 0.1);
+  background: #0d0d14;
+  flex-shrink: 0;
+}
+
+.builder__preview-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8888aa;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.builder__preview-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.builder__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 18px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Inter', sans-serif;
+  border: none;
+}
+
+.builder__btn--ghost {
+  background: transparent;
+  border: 1px solid rgba(108, 99, 255, 0.25);
+  color: #a78bfa;
+}
+
+.builder__btn--ghost:hover {
+  background: rgba(108, 99, 255, 0.1);
+  border-color: rgba(108, 99, 255, 0.4);
+}
+
+.builder__btn--primary {
+  background: linear-gradient(135deg, #6c63ff, #4f46e5);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(108, 99, 255, 0.35);
+}
+
+.builder__btn--primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px rgba(108, 99, 255, 0.5);
+}
+
+.builder__preview-canvas {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  background: #111118;
+}
+
+@media (max-width: 700px) {
+  .builder__preview-canvas { padding: 16px 8px; }
+  .builder__preview-header { flex-direction: column; gap: 10px; align-items: flex-start; }
+}
