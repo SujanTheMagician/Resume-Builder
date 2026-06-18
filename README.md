@@ -104,5 +104,5 @@ MIT License — feel free to use, modify, and distribute.
 ---
 
 <div align="center">
-  <p>Made with ❤️ · <a href="https://github.com/yourusername">@yourusername</a></p>
+  <p>Made with ❤️ · <a href="https://github.com/SujanTheMagician">Sujan Anandh</a></p>
 </div>
