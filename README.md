@@ -25,8 +25,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/resume-builder.git
-cd resume-builder
+git clone https://github.com/SujanTheMagician/Resume-Builder.git
+cd Resume-Builder
 
 # Install dependencies
 npm install
